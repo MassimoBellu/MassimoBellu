@@ -54,6 +54,35 @@ include_once('./inc/header.php');
       ?>
       </ul>
 
+      <h3>Salles</h3>
+      
+      <ul>
+        <?php
+     
+        $rooms = [
+            'Athéna',
+            'Dyonisos',
+            'Hadès',
+            'Zeus'
+      ];
+/* #1 , #2 , #3.
+      $indiceSalle = 0;
+        echo '<li>' . $rooms[$indiceSalle] . '</li>';
+    $indiceSalle = 1;
+        echo '<li>' . $rooms[$indiceSalle] . '</li>';
+
+       */ 
+        
+       for ($indiceSalle=0;$indiceSalle <4;$indiceSalle++) {
+            echo '<li>' . $rooms[$indiceSalle] . '</li>';
+
+        }
+
+            
+            ?>
+        </ul>
+    
+
     </section>
   </main>
 
